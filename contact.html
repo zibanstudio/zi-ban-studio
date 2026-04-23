@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BN6XQ99DS3');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Zi Ban</title>
+  <meta name="description" content="Contact Zi Ban for commissions, collaborations, and portfolio inquiries." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="logo.png" class="signature-logo" alt="Zi Ban logo" />
+    </a>
+
+    <nav class="site-nav">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="media.html">Media</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page contact-page-final">
+    <section class="page-intro reveal">
+      <p class="eyebrow">Contact</p>
+      <h1 class="page-title contact-title-final">Get in touch</h1>
+      <p class="contact-intro-final">
+        For commissions, collaborations, or portfolio inquiries, feel free to send a message.
+      </p>
+    </section>
+
+    <section class="contact-form-wrap-final reveal">
+      <form
+        action="https://formsubmit.co/zi.ban.studio@gmail.com"
+        method="POST"
+        class="contact-form-final"
+      >
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New portfolio inquiry from zi ban website" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html" />
+      
+
+        <div class="contact-field-final">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="contact-field-final">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="contact-field-final">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="8" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-button-final">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Zi Ban</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Site Terms</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
