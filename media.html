@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- google analytics tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BN6XQ99DS3');
+  </script>
 
-  gtag('config', 'G-BN6XQ99DS3');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Media | Zi Ban</title>
+
+  <!-- short description for SEO -->
   <meta name="description" content="Selected recognitions, features, and external media related to Zi Ban's visual work." />
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+
+  <!-- main stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- main script -->
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-
   <header class="site-header">
     <a href="index.html" class="brand">
       <img src="logo.png" class="signature-logo" alt="Zi Ban logo" />
     </a>
 
+    <!-- main navigation -->
     <nav class="site-nav">
       <a href="about.html">About</a>
       <a href="work.html">Work</a>
@@ -48,64 +59,52 @@
           referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
       </div>
-
-      <!--
-      만약 iframe이 안 뜨면 위 iframe 블록 지우고
-      아래 이미지 블록 주석 해제해서 media01.jpg로 대체해
-      <div class="media-fallback-image-final">
-        <img src="media01.jpg" alt="Fine Art Photography Awards feature preview" />
-      </div>
-      -->
     </section>
 
     <section class="media-copy-wrap-final reveal">
       <article class="media-copy-block-final">
         <h2>Feature Overview</h2>
         <p>
-          <strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit.
-          Praesent <em>tempor and visual context</em> work together to create a page
-          that feels editorial, quiet, and image-led. This section can later be replaced
-          with your actual description of the award, series, and why it matters in your practice.
+          This page documents external recognition connected to my photographic work.
+          The featured project was recognized through the Fine Art Photography Awards,
+          reflecting my interest in visual atmosphere, structure, and image-based storytelling.
         </p>
       </article>
 
       <article class="media-copy-block-final quote-block-final">
         <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-          erat a ante venenatis dapibus posuere velit aliquet.
+          Recognition matters most when it supports the direction and clarity of the work itself.
         </blockquote>
       </article>
 
       <article class="media-copy-block-final">
         <h3>Notes</h3>
         <p>
-          This page is designed to present external recognition and references in a more
-          restrained format. A <span class="underlined">single visual anchor</span> sits at the top,
-          followed by text modules that can be edited later.
+          Rather than treating media coverage as a separate archive, this page keeps it within the same visual language as the rest of the site.
+          The intention was to present recognition in a quiet and editorial format.
         </p>
       </article>
 
       <article class="media-copy-block-final">
         <h4>Included Elements</h4>
         <ul class="media-list-final">
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Consectetur adipiscing elit</li>
-          <li>Sed do eiusmod tempor incididunt</li>
+          <li>Embedded external content through an iframe</li>
+          <li>Typographic hierarchy from h2 through h6</li>
+          <li>Styled text using bold, italic, and underlined emphasis</li>
         </ul>
       </article>
 
       <article class="media-copy-block-final">
         <h5>Additional Context</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper
-          nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.
+          This section extends the portfolio by showing how editorial presentation, context, and outside recognition can be integrated into a single visual system.
         </p>
       </article>
 
       <article class="media-copy-block-final">
         <h6>Archive</h6>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.
+          Additional awards, publications, and external references can be added here as the archive continues to grow.
         </p>
       </article>
     </section>
@@ -115,12 +114,9 @@
     <p>© 2026 Zi Ban</p>
     <div class="footer-links">
       <a href="contact.html">Contact</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Site Terms</a>
+      <span>Privacy Policy</span>
+      <span>Site Terms</span>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- google analytics tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BN6XQ99DS3');
+  </script>
 
-  gtag('config', 'G-BN6XQ99DS3');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Work | Zi Ban</title>
+
+  <!-- short description for SEO -->
+  <meta name="description" content="Selected projects by Zi Ban including visual direction, branding, photography, and web design work." />
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+
+  <!-- main stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- main script -->
+  <script defer src="script.js"></script>
 </head>
 
 <body>
 
   <header class="site-header">
     <a href="index.html" class="brand">
-      <img src="logo.png" class="signature-logo" />
+      <!-- logo -->
+      <img src="logo.png" class="signature-logo" alt="Zi Ban logo" />
     </a>
 
+    <!-- main navigation -->
     <nav class="site-nav">
       <a href="about.html">About</a>
       <a href="work.html" class="active">Work</a>
@@ -33,23 +47,24 @@
 
   <main class="work-page-final">
 
-    <!-- 🔥 DESTROYER STYLE SIDE TEXT -->
-   <div class="scroll-side-label" aria-hidden="true">
-  <span class="scroll-word">
-    <span>V</span><span>I</span><span>S</span><span>U</span><span>A</span><span>L</span>
-  </span>
+    <!-- side label -->
+    <div class="scroll-side-label" aria-hidden="true">
+      <span class="scroll-word">
+        <span>V</span><span>I</span><span>S</span><span>U</span><span>A</span><span>L</span>
+      </span>
 
-  <span class="scroll-word">
-    <span>S</span><span>T</span><span>U</span><span>D</span><span>I</span><span>O</span>
-  </span>
-</div>
+      <span class="scroll-word">
+        <span>S</span><span>T</span><span>U</span><span>D</span><span>I</span><span>O</span>
+      </span>
+    </div>
 
-    <!-- TRID -->
+    <!-- project number -->
     <section class="work-topline reveal">
       <p class="work-topline-number">01</p>
       <div class="work-topline-rule"></div>
     </section>
 
+    <!-- main featured project -->
     <section class="work-hero-final reveal">
       <div class="work-hero-copy-final">
         <h1 class="work-hero-title-final">t  r  i  d seoul</h1>
@@ -63,11 +78,12 @@
 
       <div class="work-hero-image-column">
         <a href="trid.html" class="work-hero-image-link-final">
-          <img src="trid.jpg" class="work-hero-image-final" />
+          <img src="trid.jpg" class="work-hero-image-final" alt="TRID Seoul project preview" />
         </a>
       </div>
     </section>
 
+    <!-- project details -->
     <section class="work-meta-final reveal">
       <div class="work-meta-card">
         <p class="work-meta-label-final">Client</p>
@@ -85,10 +101,10 @@
       </div>
     </section>
 
-    <!-- MORE PROJECTS -->
+    <!-- more projects -->
     <section class="more-projects-final reveal">
 
-      <!-- 02 -->
+      <!-- project 02 -->
       <article class="more-project-item-final layout-a">
         <a href="#" class="more-project-link-final">
           <div class="more-project-number-final">02</div>
@@ -102,18 +118,18 @@
           </div>
 
           <div class="more-project-image-wrap-final">
-            <img src="work2m.jpg" class="more-project-image-final" />
+            <img src="work2m.jpg" class="more-project-image-final" alt="Choreography Project preview" />
           </div>
         </a>
       </article>
 
-      <!-- 03 -->
+      <!-- project 03 -->
       <article class="more-project-item-final layout-b">
         <a href="#" class="more-project-link-final">
           <div class="more-project-number-final">03</div>
 
           <div class="more-project-image-wrap-final">
-            <img src="work3m02.jpg" class="more-project-image-final" />
+            <img src="work3m02.jpg" class="more-project-image-final" alt="Studio Project preview" />
           </div>
 
           <div class="more-project-info-final">
@@ -126,7 +142,7 @@
         </a>
       </article>
 
-      <!-- 04 -->
+      <!-- project 04 -->
       <article class="more-project-item-final layout-c">
         <a href="#" class="more-project-link-final">
           <div class="more-project-number-final">04</div>
@@ -140,7 +156,7 @@
           </div>
 
           <div class="more-project-image-wrap-final wide-image">
-            <img src="work4m.jpg" class="more-project-image-final" />
+            <img src="work4m.jpg" class="more-project-image-final" alt="Actor Profile project preview" />
           </div>
         </a>
       </article>
@@ -149,7 +165,14 @@
 
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>© 2026 Zi Ban</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Site Terms</a>
+    </div>
+  </footer>
 
 </body>
 </html>

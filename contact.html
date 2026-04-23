@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- google analytics tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN6XQ99DS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BN6XQ99DS3');
+  </script>
 
-  gtag('config', 'G-BN6XQ99DS3');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact | Zi Ban</title>
   <meta name="description" content="Contact Zi Ban for commissions, collaborations, and portfolio inquiries." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -31,44 +35,42 @@
     </nav>
   </header>
 
-  <main class="page contact-page-final">
-    <section class="page-intro reveal">
-      <p class="eyebrow">Contact</p>
-      <h1 class="page-title contact-title-final">Get in touch</h1>
-      <p class="contact-intro-final">
-        For commissions, collaborations, or portfolio inquiries, feel free to send a message.
+  <main class="page contact-page-clean">
+    <section class="contact-intro-clean reveal">
+      <p class="contact-kicker-clean">Contact</p>
+      <h1 class="contact-title-clean">Get in touch</h1>
+      <p class="contact-summary-clean">
+        For commissions, collaborations, or project inquiries, feel free to reach out.
       </p>
     </section>
 
-    <section class="contact-form-wrap-final reveal">
+    <section class="contact-form-wrap-clean reveal">
       <form
         action="https://formsubmit.co/zi.ban.studio@gmail.com"
         method="POST"
-        class="contact-form-final"
+        class="contact-form-clean"
       >
-        <!-- FormSubmit settings -->
         <input type="hidden" name="_subject" value="New portfolio inquiry from zi ban website" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html" />
-      
+        <input type="hidden" name="_next" value="https://zibanstudio.github.io/zi-ban-studio/thankyou.html" />
 
-        <div class="contact-field-final">
+        <div class="contact-field-clean">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required />
         </div>
 
-        <div class="contact-field-final">
+        <div class="contact-field-clean">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" required />
         </div>
 
-        <div class="contact-field-final">
+        <div class="contact-field-clean">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="8" required></textarea>
         </div>
 
-        <button type="submit" class="contact-button-final">Send message</button>
+        <button type="submit" class="contact-button-clean">Send message</button>
       </form>
     </section>
   </main>
@@ -77,11 +79,9 @@
     <p>© 2026 Zi Ban</p>
     <div class="footer-links">
       <a href="contact.html">Contact</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Site Terms</a>
+      <span>Privacy Policy</span>
+      <span>Site Terms</span>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
