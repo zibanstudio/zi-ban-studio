@@ -1753,3 +1753,380 @@ a:visited {
     max-width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+/* ===== WORK EDITORIAL PROJECTS ===== */
+
+.more-projects-editorial {
+  max-width: 1080px;
+  margin: 96px auto 0;
+  border-top: 1px solid var(--line);
+  padding-top: 34px;
+}
+
+.more-projects-editorial-header {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.more-projects-kicker {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.more-projects-note {
+  margin: 0;
+  max-width: 440px;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.editorial-project {
+  position: relative;
+  display: grid;
+  align-items: start;
+  gap: 42px;
+  padding: 54px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.editorial-project-a {
+  grid-template-columns: 56px minmax(220px, 360px) minmax(260px, 380px);
+}
+
+.editorial-project-b {
+  grid-template-columns: 56px minmax(260px, 380px) minmax(180px, 280px);
+  padding-left: 120px;
+}
+
+.editorial-project-c {
+  grid-template-columns: 56px minmax(300px, 440px) minmax(240px, 340px);
+}
+
+.editorial-project-number {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  padding-top: 6px;
+}
+
+.editorial-project-image {
+  width: 100%;
+  max-width: 360px;
+}
+
+.editorial-project-image.small {
+  max-width: 260px;
+}
+
+.editorial-project-image.wide {
+  max-width: 430px;
+}
+
+.editorial-project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(8%);
+  opacity: 0.92;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.editorial-project:hover .editorial-project-image img {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.editorial-project-copy {
+  max-width: 360px;
+  padding-top: 4px;
+}
+
+.editorial-project-copy h2 {
+  margin: 0 0 16px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.editorial-project-copy p {
+  margin: 0 0 26px;
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.editorial-project-meta {
+  display: grid;
+  gap: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .more-projects-editorial {
+    margin-top: 72px;
+  }
+
+  .more-projects-editorial-header,
+  .editorial-project,
+  .editorial-project-a,
+  .editorial-project-b,
+  .editorial-project-c {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .editorial-project-b {
+    padding-left: 0;
+  }
+
+  .editorial-project-image,
+  .editorial-project-image.small,
+  .editorial-project-image.wide {
+    max-width: 100%;
+  }
+
+  .editorial-project-copy {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* ===== PROJECT 02 DETAIL — SPREAD BASED ===== */
+
+.project02-page {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 150px 44px 110px;
+}
+
+.project02-hero {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 72px;
+  align-items: start;
+  margin-bottom: 90px;
+}
+
+.project02-copy {
+  padding-top: 10px;
+}
+
+.project02-number {
+  margin: 0 0 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+}
+
+.project02-title {
+  margin: 0 0 22px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1.35rem, 1.8vw, 1.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+}
+
+.project02-summary {
+  margin: 0 0 36px;
+  max-width: 260px;
+  font-size: 0.86rem;
+  line-height: 1.85;
+  color: var(--muted);
+}
+
+.project02-meta {
+  display: grid;
+  gap: 18px;
+  max-width: 260px;
+}
+
+.project02-meta > div {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.project02-meta p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.project02-meta-label {
+  margin-bottom: 6px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6rem !important;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* designed spread image */
+.project02-hero-image {
+  width: 100%;
+  max-width: 820px;
+}
+
+.project02-hero-image img,
+.project02-spread img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* second spread */
+.project02-spread {
+  max-width: 1120px;
+  margin: 0 auto 96px;
+}
+
+/* overview */
+.project02-editorial {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 680px);
+  gap: 72px;
+  align-items: start;
+  margin-bottom: 92px;
+  border-top: 1px solid var(--line);
+  padding-top: 46px;
+}
+
+.project02-small-image {
+  display: none;
+}
+
+.project02-text {
+  max-width: 680px;
+}
+
+.project02-section-label {
+  margin: 0 0 28px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.64rem !important;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project02-text p {
+  margin: 0 0 26px;
+  font-size: 0.96rem;
+  line-height: 1.95;
+  color: #555;
+}
+
+.project02-back {
+  margin-top: 40px;
+}
+
+.project02-back a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project02-back a:hover {
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .project02-page {
+    padding: 136px 24px 84px;
+  }
+
+  .project02-hero,
+  .project02-editorial {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .project02-hero-image,
+  .project02-spread,
+  .project02-summary,
+  .project02-copy,
+  .project02-text {
+    max-width: 100%;
+  }
+}
+
+
+/* ===== 02U.jpg ===== */
+
+.project02-overview-image {
+  max-width: 300px;
+}
+
+.project02-overview-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* ===== PROJECT 02 Link Click ===== */
+
+.editorial-project-link {
+  display: contents;
+}
+
+.editorial-project:hover h2 {
+  opacity: 0.65;
+}
+
+
+
+
+
+
+/* ===== WORK PAGE: MAKE STUDIO PROJECT LARGER THAN ACTOR PROFILE ===== */
+
+/* Project 03 — Studio Project bigger */
+.more-projects-editorial .editorial-project-b {
+  grid-template-columns: 56px minmax(300px, 520px) minmax(260px, 360px);
+  padding-left: 0;
+}
+
+.more-projects-editorial .editorial-project-b .editorial-project-image.small {
+  max-width: 520px;
+}
+
+/* Project 04 — Actor Profile smaller */
+.more-projects-editorial .editorial-project-c {
+  grid-template-columns: 56px minmax(220px, 340px) minmax(240px, 340px);
+}
+
+.more-projects-editorial .editorial-project-c .editorial-project-image.wide {
+  max-width: 340px;
+}
