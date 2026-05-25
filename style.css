@@ -2130,3 +2130,103 @@ a:visited {
 .more-projects-editorial .editorial-project-c .editorial-project-image.wide {
   max-width: 340px;
 }
+
+
+.media-page .media-copy-wrap-final .media-copy-block-final.award-block h2 {
+  font-size: 2rem !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Media - Awards & Features Control */
+
+/* MEDIA PAGE — final layout cleanup */
+
+.media-page .page-intro {
+  margin-bottom: 5rem;
+}
+
+.media-page .media-feature-final {
+  margin-top: 4rem;
+  margin-bottom: 4.5rem;
+}
+
+.media-page .media-copy-wrap-final {
+  max-width: 860px;
+  margin-left: 0;
+  padding-left: clamp(2rem, 6vw, 5rem);
+  padding-right: 2rem;
+}
+
+.media-page .media-copy-block-final {
+  margin-bottom: 3rem;
+}
+
+.media-page .media-copy-block-final:first-child p {
+  font-size: clamp(1rem, 1.4vw, 1.4rem);
+  line-height: 1.45;
+  max-width: 760px;
+}
+
+.media-page .media-copy-block-final.award-block {
+  margin-top: 2.5rem;
+}
+
+.media-page .media-copy-block-final.award-block h2 {
+  font-size: clamp(1.4rem, 2.2vw, 2.4rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.8rem;
+}
+
+.media-page .media-copy-block-final.award-block p {
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  line-height: 1.4;
+}
+
+.media-page .eyebrow {
+  margin-left: 0.2rem;
+}
+
+
+
+
+/* ===== PROJECT 04 — ACTOR PROFILE ===== */
+
+.project04-page .project02-hero {
+  grid-template-columns: 280px minmax(0, 480px);
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 220px;
+}
+
+.project04-page .project02-hero-image {
+  max-width: 420px;
+}
+
+.project04-page .project02-spread {
+  max-width: 1040px;
+  margin: 0 auto 110px;
+}
+
+.project04-page .project02-editorial {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 620px);
+  justify-content: center;
+  gap: 56px;
+  margin-top: 20px;
+  margin-bottom: 92px;
+  border-top: 1px solid var(--line);
+  padding-top: 46px;
+}
+
+.project04-page .project02-text {
+  max-width: 620px;
+}
+
+.project04-page .project02-summary {
+  max-width: 280px;
+}
